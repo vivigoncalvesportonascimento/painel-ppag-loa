@@ -1,0 +1,930 @@
+name: painel-ppag-loa
+resources:
+  - name: acoes_planejamento
+    type: table
+    path: data-raw/acoes_planejamento.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: iso8859-1
+    dialect:
+      csv:
+        delimiter: ;
+    schema:
+      fields:
+        - name: Código do Programa
+          type: integer
+        - name: Nome do Programa
+          type: string
+        - name: Código da Área Temática
+          type: string
+        - name: Área Temática
+          type: string
+        - name: Exclusão Lógica do Programa
+          type: string
+        - name: Programa Novo
+          type: string
+        - name: Justificativa de Inclusão ou Exclusão do Programa
+          type: string
+        - name: Código da Unidade Orçamentária Responsável pelo Programa
+          type: integer
+        - name: Unidade Orçamentária Responsável pelo Programa
+          type: string
+        - name: Código da Unidade Orçamentária Responsável pela Ação
+          type: integer
+        - name: Unidade Orçamentária Responsável pela Ação
+          type: string
+        - name: Código da Função
+          type: integer
+        - name: Função
+          type: string
+        - name: Código da Subfunção
+          type: integer
+        - name: Subfunção
+          type: string
+        - name: Código do Tipo de Ação
+          type: integer
+        - name: Tipo de Ação
+          type: string
+        - name: Código da Ação
+          type: integer
+        - name: Título da Ação
+          type: string
+        - name: Código do Identificador de Ação Governamental (IAG)
+          type: integer
+        - name: Identificador de Ação Governamental (IAG)
+          type: string
+        - name: Código do Projeto Estratégico
+          type: integer
+        - name: Projeto Estratégico
+          type: string
+        - name: Exclusão Lógica da Ação
+          type: string
+        - name: Nova Ação
+          type: string
+        - name: Justificativa de Inclusão ou Exclusão da Ação
+          type: string
+        - name: Transferida para o SISOR
+          type: string
+        - name: Unidade Administrativa Responsável pela Ação
+          type: string
+        - name: Base legal
+          type: string
+        - name: Finalidade da Ação
+          type: string
+        - name: Descrição da Ação
+          type: string
+        - name: Código do Público-alvo
+          type: string
+        - name: Público-Alvo
+          type: string
+        - name: Código do Produto
+          type: string
+        - name: Produto
+          type: string
+        - name: Especificação do Produto
+          type: string
+        - name: Código da Unidade de Medida do Produto
+          type: integer
+        - name: Unidade de Medida do Produto
+          type: string
+        - name: Previsão Orçamentária 2025
+          type: integer
+        - name: Previsão Orçamentária 2026
+          type: string
+        - name: Previsão Orçamentária 2027
+          type: string
+        - name: Previsão Orçamentária 2028
+          type: integer
+        - name: Previsão Física 2025
+          type: string
+        - name: Previsão Física 2026
+          type: integer
+        - name: Previsão Física 2027
+          type: integer
+        - name: Previsão Física 2028
+          type: integer
+        - name: Ação Transposta
+          type: string
+        - name: Setor de Governo
+          type: string
+        - name: Política para mulheres
+          type: string
+        - name: field50
+          type: integer
+        - name: field51
+          type: integer
+        - name: field52
+          type: string
+        - name: field53
+          type: string
+        - name: field54
+          type: string
+        - name: field55
+          type: any
+        - name: field56
+          type: any
+        - name: field57
+          type: any
+        - name: field58
+          type: any
+        - name: field59
+          type: any
+        - name: field60
+          type: any
+        - name: field61
+          type: any
+        - name: field62
+          type: any
+        - name: field63
+          type: any
+        - name: field64
+          type: any
+        - name: field65
+          type: any
+        - name: field66
+          type: any
+        - name: field67
+          type: any
+        - name: field68
+          type: any
+        - name: field69
+          type: any
+        - name: field70
+          type: any
+        - name: field71
+          type: any
+        - name: field72
+          type: any
+        - name: field73
+          type: any
+        - name: field74
+          type: any
+        - name: field75
+          type: any
+        - name: field76
+          type: any
+        - name: field77
+          type: any
+        - name: field78
+          type: any
+        - name: field79
+          type: any
+        - name: field80
+          type: any
+        - name: field81
+          type: any
+        - name: field82
+          type: any
+        - name: field83
+          type: any
+        - name: field84
+          type: any
+        - name: field85
+          type: any
+        - name: field86
+          type: any
+        - name: field87
+          type: any
+        - name: field88
+          type: any
+        - name: field89
+          type: any
+        - name: field90
+          type: any
+        - name: field91
+          type: any
+        - name: field92
+          type: any
+        - name: field93
+          type: any
+        - name: field94
+          type: any
+        - name: field95
+          type: any
+        - name: field96
+          type: any
+        - name: field97
+          type: any
+        - name: field98
+          type: any
+        - name: field99
+          type: any
+        - name: field100
+          type: any
+        - name: field101
+          type: any
+        - name: field102
+          type: any
+        - name: field103
+          type: any
+  - name: base_orcam_receita_fiscal
+    type: table
+    path: data-raw/base_orcam_receita_fiscal.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: iso8859-1
+    dialect:
+      csv:
+        delimiter: ;
+    schema:
+      fields:
+        - name: UO_COD
+          type: integer
+        - name: NOME_UO
+          type: string
+        - name: SIGLA_UO
+          type: string
+        - name: COD_FONTE
+          type: integer
+        - name: FONTE
+          type: string
+        - name: INTERPRETACAO
+          type: string
+        - name: CATEGORIA
+          type: integer
+        - name: ORIGEM
+          type: integer
+        - name: ESPECIE
+          type: integer
+        - name: RUBRICA
+          type: integer
+        - name: ALINEA
+          type: integer
+        - name: SUBALINEA
+          type: integer
+        - name: TIPO_RECEITA
+          type: integer
+        - name: ITEM
+          type: integer
+        - name: SUBITEM
+          type: integer
+        - name: COD_RECEITA
+          type: string
+        - name: RECEITA
+          type: string
+        - name: INTERP_RECEITA
+          type: string
+        - name: VALOR UO (R$)
+          type: string
+        - name: VALOR SCPPO (R$)
+          type: string
+        - name: VALOR FINAL (R$)
+          type: string
+        - name: ANO
+          type: integer
+        - name: BASE LEGAL
+          type: string
+        - name: METODOLOGIA DE CÁLCULO E PREMISSAS UTILIZADAS
+          type: string
+  - name: base_orcam_receita_investimento
+    type: table
+    path: data-raw/base_orcam_receita_investimento.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: iso8859-1
+    dialect:
+      csv:
+        delimiter: ;
+    schema:
+      fields:
+        - name: COD_UO
+          type: integer
+        - name: NOME_UO
+          type: string
+        - name: SIGLA_UO
+          type: string
+        - name: CATEGORIA
+          type: integer
+        - name: SUBCATEGORIA
+          type: integer
+        - name: ALINEA
+          type: integer
+        - name: SUBALINEA
+          type: integer
+        - name: COD_RECEITA
+          type: string
+        - name: NIVEL_ORIGEM
+          type: string
+        - name: RECEITA
+          type: string
+        - name: VALOR UO (R$)
+          type: string
+        - name: VALOR SCPPO (R$)
+          type: string
+        - name: VALOR FINAL (R$)
+          type: string
+        - name: ANO
+          type: integer
+  - name: base_qdd_fiscal
+    type: table
+    path: data-raw/base_qdd_fiscal.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: iso8859-1
+    dialect:
+      csv:
+        delimiter: ;
+    schema:
+      fields:
+        - name: ANO
+          type: integer
+        - name: COD_ORGAO
+          type: integer
+        - name: ORGAO
+          type: string
+        - name: PODER
+          type: integer
+        - name: SITUACAO
+          type: integer
+        - name: COD_UO
+          type: integer
+        - name: UO
+          type: string
+        - name: CATEGORIA
+          type: integer
+        - name: GRUPO_DESPESA
+          type: integer
+        - name: MODALIDADE
+          type: integer
+        - name: ELEMENTO_DESPESA
+          type: integer
+        - name: FONTE
+          type: integer
+        - name: IPU
+          type: integer
+        - name: SEQ_PROGTRAB
+          type: integer
+        - name: FUNCAO
+          type: integer
+        - name: SUB_FUNCAO
+          type: integer
+        - name: PROGRAMA
+          type: integer
+        - name: IDENT_PROJATIV
+          type: integer
+        - name: PROJ_ATIV
+          type: integer
+        - name: AÇÃO
+          type: integer
+        - name: SUB_PROJETO
+          type: integer
+        - name: VALOR UO (R$)
+          type: string
+        - name: VALOR SCPPO (R$)
+          type: string
+        - name: VALOR FINAL (R$)
+          type: string
+        - name: IAG
+          type: integer
+        - name: NOME_ACAO
+          type: string
+        - name: NOME_PROGRAMA
+          type: string
+  - name: base_qdd_investimento
+    type: table
+    path: data-raw/base_qdd_investimento.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: iso8859-1
+    dialect:
+      csv:
+        delimiter: ;
+    schema:
+      fields:
+        - name: ANO
+          type: integer
+        - name: COD_ORGAO
+          type: integer
+        - name: ORGAO
+          type: string
+        - name: PODER
+          type: integer
+        - name: COD_UO
+          type: integer
+        - name: UO
+          type: string
+        - name: SEQ_PROGTRAB
+          type: integer
+        - name: FUNCAO
+          type: integer
+        - name: SUB_FUNCAO
+          type: integer
+        - name: PROGRAMA
+          type: integer
+        - name: IDENT_PROJATIV
+          type: integer
+        - name: PROJ_ATIV
+          type: integer
+        - name: AÇÃO
+          type: integer
+        - name: VALOR (R$)
+          type: string
+        - name: IAG
+          type: integer
+        - name: DESC_PROJETO_ATIV
+          type: string
+        - name: CATEGORIA
+          type: string
+        - name: COD_NATUREZA
+          type: integer
+        - name: NATUREZA
+          type: string
+        - name: COD_FONTE
+          type: integer
+        - name: FONTE
+          type: string
+        - name: NOME_ACAO
+          type: string
+        - name: NOME_PROGRAMA
+          type: string
+  - name: indicadores_planejamento
+    type: table
+    path: data-raw/indicadores_planejamento.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: cp1252
+    dialect:
+      csv:
+        delimiter: ;
+    schema:
+      fields:
+        - name: Código do Programa
+          type: integer
+        - name: Nome do Programa
+          type: string
+        - name: Exclusão Lógica do Programa
+          type: boolean
+        - name: Indicador
+          type: string
+        - name: Exclusão Lógica do Indicador
+          type: boolean
+        - name: Unidade de Medida
+          type: string
+        - name: Índice de Referência
+          type: number
+        - name: Em apuração? (Índice de Referência)
+          type: string
+        - name: Data de Apuração
+          type: string
+        - name: Previsão para 2025
+          type: string
+        - name: Em apuração? (2025)
+          type: string
+        - name: Previsão para 2026
+          type: number
+        - name: Em apuração? (2026)
+          type: string
+        - name: Previsão para 2027
+          type: number
+        - name: Em apuração? (2027)
+          type: string
+        - name: Previsão para 2028
+          type: number
+        - name: Em apuração? (2028)
+          type: string
+        - name: Fonte
+          type: string
+        - name: Periodicidade
+          type: string
+        - name: Base Geográfica
+          type: string
+        - name: Fórmula de Cálculo
+          type: string
+        - name: Justificativa do Status em apuração da(s) Previsão(es) do(s) Índice(s)
+          type: string
+        - name: Justificativa do Status em apuração do Índice de Referência
+          type: string
+        - name: Data Alteração
+          type: string
+        - name: Indicador Novo?
+          type: boolean
+        - name: Polaridade
+          type: string
+        - name: field27
+          type: string
+        - name: field28
+          type: string
+        - name: field29
+          type: string
+        - name: field30
+          type: string
+        - name: field31
+          type: any
+        - name: field32
+          type: string
+        - name: field33
+          type: boolean
+        - name: field34
+          type: string
+        - name: field35
+          type: string
+        - name: field36
+          type: string
+        - name: field37
+          type: boolean
+        - name: field38
+          type: string
+        - name: field39
+          type: any
+        - name: field40
+          type: any
+        - name: field41
+          type: any
+        - name: field42
+          type: any
+        - name: field43
+          type: any
+        - name: field44
+          type: any
+        - name: field45
+          type: any
+        - name: field46
+          type: any
+        - name: field47
+          type: string
+        - name: field48
+          type: boolean
+        - name: field49
+          type: string
+  - name: localizadores_todos_planejamento
+    type: table
+    path: data-raw/localizadores_todos_planejamento.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: iso8859-1
+    dialect:
+      csv:
+        delimiter: ;
+    schema:
+      fields:
+        - name: Código do Programa
+          type: integer
+        - name: Nome do Programa
+          type: string
+        - name: Código da Área Temática
+          type: string
+        - name: Área Temática
+          type: string
+        - name: Exclusão Lógica do Programa
+          type: boolean
+        - name: Código da Ação
+          type: integer
+        - name: Título da Ação
+          type: string
+        - name: Código do Identificador de Ação Governamental (IAG)
+          type: integer
+        - name: Identificador de Ação Governamental (IAG)
+          type: string
+        - name: Código do Projeto Estratégico
+          type: integer
+        - name: Projeto Estratégico
+          type: string
+        - name: Código da Função
+          type: integer
+        - name: Função
+          type: string
+        - name: Código da Subfunção
+          type: integer
+        - name: SubFunção
+          type: string
+        - name: Código da Unidade Orçamentária Responsável pela Ação
+          type: integer
+        - name: Unidade Orçamentária Responsável pela Ação
+          type: string
+        - name: Exclusão Lógica da Ação
+          type: boolean
+        - name: Código do Localizador
+          type: string
+        - name: Exclusão Lógica do Localizador
+          type: string
+        - name: Código da Região Geográfica Intermediária
+          type: integer
+        - name: Região Geográfica Intermediária
+          type: string
+        - name: Código do Município IBGE
+          type: integer
+        - name: Código do Município Sigplan
+          type: integer
+        - name: Município
+          type: string
+        - name: Previsão Orçamentária 2025
+          type: integer
+        - name: Previsão Física 2025
+          type: integer
+        - name: Previsão Orçamentária 2026
+          type: integer
+        - name: Previsão Física 2026
+          type: integer
+        - name: Previsão Orçamentária 2027
+          type: integer
+        - name: Previsão Física 2027
+          type: integer
+        - name: Previsão Orçamentária 2028
+          type: integer
+        - name: Previsão Física 2028
+          type: integer
+        - name: field34
+          type: any
+        - name: field35
+          type: any
+        - name: field36
+          type: any
+        - name: field37
+          type: any
+  - name: programas_planejamento
+    type: table
+    path: data-raw/programas_planejamento.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: iso8859-1
+    dialect:
+      csv:
+        delimiter: ;
+    schema:
+      fields:
+        - name: Código do Programa
+          type: integer
+        - name: Nome do Programa
+          type: string
+        - name: Exclusão Lógica do Programa
+          type: string
+        - name: Programa Novo
+          type: string
+        - name: Código da Área Temática
+          type: string
+        - name: Área Temática
+          type: string
+        - name: Código do Objetivo Estratégico
+          type: integer
+        - name: Objetivo Estratégico
+          type: string
+        - name: Código da Diretriz Estratégica
+          type: string
+        - name: Diretriz Estratégica
+          type: string
+        - name: Justificativa de Inclusão ou Exclusão do Programa
+          type: string
+        - name: Código do Órgão Responsável pelo Programa
+          type: integer
+        - name: Órgão Responsável pelo Programa
+          type: string
+        - name: Código da Unidade Orçamentária Responsável pelo Programa
+          type: integer
+        - name: Unidade Orçamentária Responsável pelo Programa
+          type: string
+        - name: Objetivo
+          type: string
+        - name: Justificativa
+          type: string
+        - name: Tipo de Programa
+          type: string
+        - name: Horizonte Temporal
+          type: string
+        - name: Estratégia de Implementação
+          type: string
+        - name: Unidade Administrativa Responsável pelo Programa
+          type: string
+        - name: Previsão Orçamentária 2025
+          type: integer
+        - name: Previsão Orçamentária 2026
+          type: integer
+        - name: Previsão Orçamentária 2027
+          type: integer
+        - name: Previsão Orçamentária 2028
+          type: integer
+        - name: Programa Transposto
+          type: string
+        - name: Causas
+          type: string
+        - name: Título do Objetivo de Desenvolvimento Sustentável
+          type: string
+        - name: Subtítulo do Objetivo de Desenvolvimento Sustentável
+          type: string
+        - name: field30
+          type: any
+        - name: field31
+          type: any
+        - name: field32
+          type: any
+        - name: field33
+          type: any
+        - name: field34
+          type: any
+        - name: field35
+          type: any
+        - name: field36
+          type: any
+  - name: tab_auxiliar_ipu
+    type: table
+    path: data-raw/tab_auxiliar_IPU.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: iso8859-1
+    dialect:
+      csv:
+        delimiter: ;
+    schema:
+      fields:
+        - name: ipu_cod
+          type: integer
+        - name: ipu_desc
+          type: string
+        - name: ipu_interpretacao
+          type: any
+  - name: tab_auxiliar_despesa_iag
+    type: table
+    path: data-raw/tab_auxiliar_despesa_IAG.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: iso8859-1
+    dialect:
+      csv:
+        delimiter: ;
+    schema:
+      fields:
+        - name: iag_cod
+          type: integer
+        - name: iag_desc
+          type: string
+        - name: iag_interpretacao
+          type: string
+  - name: tab_auxiliar_despesa_fontes
+    type: table
+    path: data-raw/tab_auxiliar_despesa_fontes.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: iso8859-1
+    dialect:
+      csv:
+        delimiter: ;
+    schema:
+      fields:
+        - name: fonte_cod
+          type: integer
+        - name: fonte_desc
+          type: string
+        - name: fonte_interpretacao
+          type: string
+  - name: tab_auxiliar_despesa_funcao
+    type: table
+    path: data-raw/tab_auxiliar_despesa_funcao.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: iso8859-1
+    dialect:
+      csv:
+        delimiter: ;
+    schema:
+      fields:
+        - name: funcao_cod
+          type: integer
+        - name: funcao_desc
+          type: string
+  - name: tab_auxiliar_despesa_grupo
+    type: table
+    path: data-raw/tab_auxiliar_despesa_grupo.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: iso8859-1
+    dialect:
+      headerRows:
+        - 4
+    schema:
+      fields:
+        - name: 3;OUTRAS DESPESAS CORRENTES;"DESPESAS COM AQUISIÇÃO DE MATERIAL DE
+            CONSUMO
+          type: string
+        - name: PAGAMENTO DE DIÁRIAS
+          type: string
+        - name: CONTRIBUIÇÕES
+          type: string
+        - name: SUBVENÇÕES
+          type: string
+        - name: AUXÍLIO-ALIMENTAÇÃO
+          type: string
+        - name: AUXÍLIO-TRANSPORTE
+          type: string
+        - name: ALÉM DE OUTRAS DESPESAS DA CATEGORIA ECONÔMICA ""DESPESAS CORRENTES""
+            NÃO CLASSIFICÁVEIS NOS DEMAIS GRUPOS DE NATUREZA DE DESPESA."
+          type: string
+  - name: tab_auxiliar_despesa_poder
+    type: table
+    path: data-raw/tab_auxiliar_despesa_poder.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: iso8859-1
+    dialect:
+      csv:
+        delimiter: ;
+    schema:
+      fields:
+        - name: uo_cod
+          type: integer
+        - name: uo_desc
+          type: string
+        - name: sigla
+          type: string
+        - name: poder
+          type: string
+  - name: tab_auxiliar_elemento
+    type: table
+    path: data-raw/tab_auxiliar_elemento.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: iso8859-1
+    dialect:
+      csv:
+        delimiter: ;
+    schema:
+      fields:
+        - name: elemento_cod
+          type: integer
+        - name: elemento_desc
+          type: string
+  - name: tab_auxiliar_glossario
+    type: table
+    path: data-raw/tab_auxiliar_glossario.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: cp1252
+    dialect:
+      csv:
+        delimiter: ;
+    schema:
+      fields:
+        - name: Termo
+          type: string
+        - name: Definição Técnica
+          type: string
+        - name: Linguagem Simples
+          type: string
+  - name: tab_auxiliar_investimentos_uo
+    type: table
+    path: data-raw/tab_auxiliar_investimentos_uo.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: iso8859-1
+    dialect:
+      csv:
+        delimiter: ;
+    schema:
+      fields:
+        - name: uo_cod
+          type: integer
+        - name: uo_desc
+          type: string
+        - name: uo_sigla
+          type: string
+  - name: tab_auxiliar_programa
+    type: table
+    path: data-raw/tab_auxiliar_programa.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: iso8859-1
+    dialect:
+      csv:
+        delimiter: ;
+    schema:
+      fields:
+        - name: programa_cod
+          type: integer
+        - name: programa_desc
+          type: string
+        - name: uo_programa_cod
+          type: integer
+        - name: uo_programa_desc
+          type: string
+  - name: tab_auxiliar_receita_categoria
+    type: table
+    path: data-raw/tab_auxiliar_receita_categoria.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: iso8859-1
+    dialect:
+      csv:
+        delimiter: ;
+    schema:
+      fields:
+        - name: categoriareceita_cod
+          type: integer
+        - name: categoriareceita_desc
+          type: string
