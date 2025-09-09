@@ -7,6 +7,7 @@ fields:
           type: string
         - name: Área Temática
           type: string
+          description: "Forma de organização das políticas públicas agregadas por temas afins."
         - name: Exclusão Lógica do Programa
           type: string
         - name: Programa Novo
@@ -17,6 +18,7 @@ fields:
           type: integer
         - name: Unidade Orçamentária Responsável pelo Programa
           type: string
+          description: "É a unidade orçamentária responsável pelo gerenciamento do programa. Vinculam-se aos programas multissetorias apenas uma Unidade Orçamentária Responsável pelo Programa."
         - name: Código da Unidade Orçamentária Responsável pela Ação
           type: integer
         - name: Unidade Orçamentária Responsável pela Ação
@@ -25,6 +27,7 @@ fields:
           type: integer
         - name: Função
           type: string
+          description: "De acordo com a Portaria Ministerial n. o 42/99, a função representa o maior nível de agregação das diversas áreas de despesa que competem ao setor público. Tem como objetivo consolidar em que áreas de atuação do setor público são gastos os recursos orçamentários, tendo como critério a natureza do objeto da ação. Portanto, visa a agregar ações que tenham objetos correlatos."
         - name: Código da Subfunção
           type: integer
         - name: Subfunção
@@ -71,6 +74,7 @@ fields:
           type: integer
         - name: Produto
           type: string
+          description: "Bem, serviço ou transferência financeira destinado ao público-alvo da ação. Para cada ação deve haver um só produto. Em situações especiais, o produto expressa a quantidade de beneficiários atendidos pela ação. Destaca-se que no âmbito das ações contínuas, cada categoria de produto final entregue pela unidade enseja a criação de uma ação correspondente no plano. Por regra, os produtos devem ser determinados, mensuráveis,  objetivos e gerencialmente úteis para o controle físico da ação."
         - name: Especificação do Produto
           type: string
         - name: Código da Unidade de Medida do Produto

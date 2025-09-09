@@ -25,6 +25,8 @@ fields:
           type: integer
         - name: FONTE
           type: integer
+          description: "Classificação criada para assegurar que receitas vinculadas por lei a finalidade específica sejam exclusivamente aplicadas em programas e ações que visem à consecução desse objetivo. Como mecanismo integrador entre a
+receita e a despesa, a classificação por fonte de recurso exerce duplo papel no processo orçamentário:na receita, indica o destino de recursos para o financiamento de determinadas despesas; na despesa, identifica a origem dos recursos que estão sendo utilizados"
         - name: IPU
           type: integer
           constraints: 

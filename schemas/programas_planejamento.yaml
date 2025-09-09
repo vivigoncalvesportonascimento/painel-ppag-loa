@@ -25,10 +25,12 @@ fields:
           type: integer
         - name: Órgão Responsável pelo Programa
           type: string
+          description: "Identifica o sistema operacional a que está vinculada a unidade orçamentária responsável pelo programa. Usualmente são identificados pela secretaria líder do referido sistema operacional. Vinculam-se aos programas multissetorias apenas um Órgão Responsável."
         - name: Código da Unidade Orçamentária Responsável pelo Programa
           type: integer
         - name: Unidade Orçamentária Responsável pelo Programa
           type: string
+          description: "É a unidade orçamentária responsável pelo gerenciamento do programa. Vinculam-se aos programas multissetorias apenas uma Unidade Orçamentária Responsável pelo Programa."
         - name: Objetivo
           type: string
         - name: Justificativa
@@ -55,5 +57,6 @@ fields:
           type: string
         - name: Título do Objetivo de Desenvolvimento Sustentável
           type: string
+          description: "É uma Agenda Mundial composta por 17 objetivos, para uma ação universal contra a pobreza, proteção do planeta e para garantir que todas as pessoas tenham paz e prosperidade. Dialogam com as políticas públicas e são utilizados para integrar o planejamento estadual à nova agenda global."
         - name: Subtítulo do Objetivo de Desenvolvimento Sustentável
           type: string
