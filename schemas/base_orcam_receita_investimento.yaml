@@ -1,0 +1,29 @@
+fields:
+        - name: COD_UO
+          type: integer
+        - name: NOME_UO
+          type: string
+        - name: SIGLA_UO
+          type: string
+        - name: CATEGORIA
+          type: integer
+        - name: SUBCATEGORIA
+          type: integer
+        - name: ALINEA
+          type: integer
+        - name: SUBALINEA
+          type: integer
+        - name: COD_RECEITA
+          type: string
+        - name: NIVEL_ORIGEM
+          type: string
+        - name: RECEITA
+          type: string
+        - name: VALOR UO (R$)
+          type: string
+        - name: VALOR SCPPO (R$)
+          type: string
+        - name: VALOR FINAL (R$)
+          type: string
+        - name: ANO
+          type: integer

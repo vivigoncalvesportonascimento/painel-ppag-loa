@@ -1,0 +1,9 @@
+fields:
+        - name: programa_cod
+          type: integer
+        - name: programa_desc
+          type: string
+        - name: uo_programa_cod
+          type: integer
+        - name: uo_programa_desc
+          type: string

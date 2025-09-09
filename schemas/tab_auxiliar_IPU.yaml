@@ -1,0 +1,7 @@
+fields:
+        - name: ipu_cod
+          type: integer
+        - name: ipu_desc
+          type: string
+        - name: ipu_interpretacao
+          type: any

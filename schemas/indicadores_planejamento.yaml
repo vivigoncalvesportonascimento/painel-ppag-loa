@@ -1,0 +1,53 @@
+fields:
+        - name: Código do Programa
+          type: integer
+        - name: Nome do Programa
+          type: string
+        - name: Exclusão Lógica do Programa
+          type: string
+        - name: Indicador
+          type: string
+        - name: Exclusão Lógica do Indicador
+          type: string
+        - name: Unidade de Medida
+          type: string
+        - name: Índice de Referência
+          type: integer
+        - name: Em apuração Índice de Referência
+          type: string
+        - name: Data de Apuração
+          type: string
+        - name: Previsão para 2025
+          type: integer
+        - name: Em apuração 2025
+          type: string
+        - name: Previsão para 2026
+          type: integer
+        - name: Em apuração 2026
+          type: string
+        - name: Previsão para 2027
+          type: integer
+        - name: Em apuração 2027
+          type: string
+        - name: Previsão para 2028
+          type: integer
+        - name: Em apuração 2028
+          type: string
+        - name: Fonte
+          type: string
+        - name: Periodicidade
+          type: string
+        - name: Base Geográfica
+          type: string
+        - name: Fórmula de Cálculo
+          type: string
+        - name: Justificativa do Status em apuração da  Previsão do  Índice
+          type: string
+        - name: Justificativa do Status em apuração do Índice de Referência
+          type: string
+        - name: Data Alteração
+          type: string
+        - name: Indicador Novo
+          type: string
+        - name: Polaridade
+          type: string

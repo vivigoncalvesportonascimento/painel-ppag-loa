@@ -1,0 +1,9 @@
+fields:
+        - name: uo_cod
+          type: integer
+        - name: uo_desc
+          type: string
+        - name: sigla
+          type: string
+        - name: poder
+          type: string

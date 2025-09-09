@@ -1,0 +1,5 @@
+fields:
+        - name: funcao_cod
+          type: integer
+        - name: funcao_desc
+          type: string

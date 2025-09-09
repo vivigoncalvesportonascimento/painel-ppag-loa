@@ -1,0 +1,7 @@
+fields:
+        - name: grupo_cod
+          type: integer
+        - name: grupo_desc
+          type: string
+        - name: grupo_interpretacao
+          type: string

@@ -1,0 +1,7 @@
+fields:
+        - name: Termo
+          type: string
+        - name: Definição Técnica
+          type: string
+        - name: Linguagem Simples
+          type: string

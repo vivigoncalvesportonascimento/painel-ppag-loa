@@ -1,0 +1,5 @@
+fields:
+        - name: elemento_cod
+          type: integer
+        - name: elemento_desc
+          type: string

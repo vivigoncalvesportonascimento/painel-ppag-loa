@@ -1,0 +1,5 @@
+fields:
+        - name: categoriareceita_cod
+          type: integer
+        - name: categoriareceita_desc
+          type: string

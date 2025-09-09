@@ -1,0 +1,7 @@
+fields:
+        - name: iag_cod
+          type: integer
+        - name: iag_desc
+          type: string
+        - name: iag_interpretacao
+          type: string

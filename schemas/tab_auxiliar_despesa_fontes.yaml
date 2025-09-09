@@ -1,0 +1,7 @@
+fields:
+        - name: fonte_cod
+          type: integer
+        - name: fonte_desc
+          type: string
+        - name: fonte_interpretacao
+          type: string
