@@ -1,6 +1,8 @@
 fields:
         - name: iag_cod
           type: integer
+          constraints: 
+            enum: [0, 1]
         - name: iag_desc
           type: string
         - name: iag_interpretacao

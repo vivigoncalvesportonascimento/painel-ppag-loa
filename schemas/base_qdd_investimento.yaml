@@ -29,6 +29,8 @@ fields:
           type: string
         - name: IAG
           type: integer
+          constraints: 
+            enum: [0, 1]
         - name: DESC_PROJETO_ATIV
           type: string
         - name: CATEGORIA

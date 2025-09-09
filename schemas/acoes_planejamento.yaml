@@ -39,6 +39,8 @@ fields:
           type: string
         - name: Código do Identificador de Ação Governamental IAG
           type: integer
+          constraints: 
+            enum: [0, 1]
         - name: Identificador de Ação Governamental IAG
           type: string
         - name: Código do Projeto Estratégico

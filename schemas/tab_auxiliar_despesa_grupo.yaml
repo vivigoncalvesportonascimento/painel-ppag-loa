@@ -1,6 +1,8 @@
 fields:
         - name: grupo_cod
           type: integer
+          constraints: 
+            enum: [1, 2, 3, 4, 5, 6, 9]
         - name: grupo_desc
           type: string
         - name: grupo_interpretacao
